@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Writers_Friend_Web_App
+build_property.RootNamespace = Writers_Friend_Web_App
+build_property.ProjectDir = C:\Users\jerem\Programming\Writers Friend Web App\Writers Friend Web App\Writers Friend Web App\
+build_property.RazorLangVersion = 3.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jerem\Programming\Writers Friend Web App\Writers Friend Web App\Writers Friend Web App
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/AffectForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBZmZlY3RGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/AnswerType.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbnN3ZXJUeXBlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/ElementCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFbGVtZW50Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/ElementList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFbGVtZW50TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/ElementSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xFbGVtZW50U2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/FileDownload.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGaWxlRG93bmxvYWQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/FileUpload.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGaWxlVXBsb2FkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/NameValidator.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYW1lVmFsaWRhdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/SaveOnLeave.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTYXZlT25MZWF2ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/SaveToWebSession.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTYXZlVG9XZWJTZXNzaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Components/SceneList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTY2VuZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Pages/Data.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Pages/Map.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Tabs/EditData.razor]
+build_metadata.AdditionalFiles.TargetPath = VGFic1xFZGl0RGF0YS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Tabs/EditScene.razor]
+build_metadata.AdditionalFiles.TargetPath = VGFic1xFZGl0U2NlbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/Tabs/Timeline.razor]
+build_metadata.AdditionalFiles.TargetPath = VGFic1xUaW1lbGluZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jerem/Programming/Writers Friend Web App/Writers Friend Web App/Writers Friend Web App/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
