@@ -11,7 +11,7 @@
       "Blazored.SessionStorage.dll": "sha256-XkZNIC6OGMeHZDbBGnhfc9yXdLIvGa8LlKDd4ZPWkS8=",
       "Blazored.TextEditor.dll": "sha256-LMdQYoLtnpSSOLOfcqsF2EuS6o8aor5meBsPL8T8PWM=",
       "BlazorInputFile.dll": "sha256-C0KrMmLQQE68cd1+FNwIOW89nNGbOH48hRxQAoSBaaA=",
-      "BusinessLogic.dll": "sha256-v9\/kRAr4xteE\/oLcRsKlBC4tnZKnTkj6AtTbdiXJtUU=",
+      "BusinessLogic.dll": "sha256-39gBFxfWIEIOFxmFYX7XrCT872c9HRc5RngTBIOzTQI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-gpAWD2XXPP8PCe9bzWQjkqKQkIdT\/GNs4lSo950OTIk=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-\/7\/rwea8I\/vOZ8UQlhaBZAVWyCo1wIT5Rbhe4q6mN3o=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-RR48SSDivPXWmL+Oi1CTUJ3f6qekNQPhnakvvsyostk=",
@@ -71,14 +71,14 @@
       "System.Text.RegularExpressions.dll": "sha256-1TGR\/++Fe+OVrRxOPvNKWeoLbu+Rzrk0H7q26giBAIA=",
       "System.Threading.dll": "sha256-yeVu6OLAsZdwfBWNiwLaSmAv5ZV+21CH5lin6qErc\/0=",
       "System.Threading.Tasks.Extensions.dll": "sha256-kOonqktuya7Vbq13l9eDhcR1oxVUXBAUZY5lFtrIMls=",
-      "Writers Friend Web App.dll": "sha256-fIvuu1P5BNajcOHBlvEL\/Wp\/W4dkJvB7xfA4mH+j8Zs="
+      "Writers Friend Web App.dll": "sha256-nSe\/0dzWaFr3f0H5BIMZ1YHOnJHvr1W2OtnjoGaZsVw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.6.0.5.5og2bxjr7p.js": "sha256-783uOt0jgblQfP6Yz5TJeuW2xxtl6UHZQPngZtCz79U=",
+      "dotnet.6.0.5.skoqz6qb1i.js": "sha256-783uOt0jgblQfP6Yz5TJeuW2xxtl6UHZQPngZtCz79U=",
       "dotnet.timezones.blat": "sha256-vRU6+wGzQ3FJ0JtyPJtipblPe9MvJf+qKY20xZhuyKQ=",
       "dotnet.wasm": "sha256-vmRDDmubs49Hwffzas8p5i8FwcPcYxb33H6g5\/2UyYk=",
       "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
