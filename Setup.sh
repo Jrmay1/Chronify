@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Do not run if root
+if [ $(id -u) -eq 0 ]; then
+
+   echo "Please do not run as root"
+   exit
+fi
+
 # Fetch Latest
 git fetch
 git checkout master
