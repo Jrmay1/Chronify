@@ -8,16 +8,19 @@ if [ $(id -u) -eq 0 ]; then
 fi
 
 # Fetch Latest
+echo "Pulling Latest Changes"
 git fetch
 git checkout master
 git pull
 
-# Copy Apache Files to required location
+echo "Copying Apache Config Files"
 sudo cp chronify.net.conf /etc/apache2/sites-enabled/chronify.net.conf
 
-# Copy website to required location
+echo "Copying web page files"
 sudo rm -rf /var/www/chronify.net/publish
 sudo cp -r publish /var/www/chronify.net/
 
-# Restart Apache Server
+echo "Restarting Apache Server"
 sudo systemctl restart apache2
+
+echo "Complete"
