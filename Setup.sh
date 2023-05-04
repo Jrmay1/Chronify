@@ -14,11 +14,11 @@ git checkout master
 git pull
 
 echo "Copying Apache Config Files"
-sudo cp chronify.net.conf /etc/apache2/sites-enabled/chronify.net.conf
+sudo cp chronify.conf /etc/apache2/sites-enabled/chronify.conf
 
 echo "Copying web page files"
-sudo rm -rf /var/www/chronify.net/publish
-sudo cp -r publish /var/www/chronify.net/
+sudo rm -rf /var/www/chronify/publish
+sudo cp -r publish /var/www/chronify/
 
 echo "Restarting Apache Server"
 sudo systemctl restart apache2
