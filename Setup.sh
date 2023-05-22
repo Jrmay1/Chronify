@@ -16,11 +16,8 @@ git pull
 echo "Copying Apache Config Files"
 sudo cp chronify.conf /etc/apache2/sites-enabled/chronify.conf
 
-echo "Copying web page files"
-sudo rm -rf /var/www/chronify/publish
-sudo cp -r publish /var/www/chronify/
-
 echo "Restarting Apache Server"
 sudo systemctl restart apache2
+sudo systemctl restart chronify.service
 
 echo "Complete"
