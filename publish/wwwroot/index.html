@@ -31,6 +31,7 @@
 
     <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
+    <script src="https://js.stripe.com/v3/" />
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 
     <script src="inputfile.js"></script>
@@ -64,6 +65,18 @@
             anchorElement.remove();
             URL.revokeObjectURL(url);
         }
+    </script>
+
+    <script>
+        var stripe = window.Stripe('pk_test_51O4HpxEmXvNyWu519Y2szF6tJzWZpvwrZS9niaTyE5GBI8rNvnhUIpfA6FcjC5G993dMZreh1rScjVAqYtlHEz7W00wg35CU62');
+
+        window.stripeCheckout = function (callBackInstance, amount, token) {
+            stripe.redirectToCheckout({
+                sessionId: token
+            }).then(function (result) {
+                // up to you
+            })
+        };
     </script>
 </body>
 
