@@ -2,8 +2,10 @@
 <html>
 
 <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Chronify</title>
     <base href="/" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
@@ -18,8 +20,6 @@
     <!-- Text Editor -->
     <link href="_content/Radzen.Blazor/css/default-base.css" rel="stylesheet">
 
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://js.stripe.com/v3/ 'sha256-FYRc77VpX27F3gowbqN7jBZYODVGewU5D9h4HBFqaUg='">
-
 </head>
 
 <body>
@@ -31,7 +31,7 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
+    <!--<script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>-->
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
 
@@ -66,18 +66,6 @@
             anchorElement.remove();
             URL.revokeObjectURL(url);
         }
-    </script>
-
-    <script>
-        var stripe = window.Stripe('pk_test_51O4HpxEmXvNyWu519Y2szF6tJzWZpvwrZS9niaTyE5GBI8rNvnhUIpfA6FcjC5G993dMZreh1rScjVAqYtlHEz7W00wg35CU62');
-
-        window.stripeCheckout = function (callBackInstance, amount, token) {
-            stripe.redirectToCheckout({
-                sessionId: token
-            }).then(function (result) {
-                // up to you
-            })
-        };
     </script>
 </body>
 
