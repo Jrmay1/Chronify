@@ -1,9 +1,10 @@
-﻿import "./vendors/flatpickr.js?v=1.2.0.0";
-import * as utilities from "./utilities.js?v=1.2.0.0";
+﻿import "./vendors/flatpickr.js?v=1.3.3.0";
+import * as utilities from "./utilities.js?v=1.3.3.0";
+import { ClassWatcher } from "./observer.js?v=1.3.3.0";
 
 const _pickers = [];
 
-export function initialize(element, elementId, options) {
+export function initialize(dotnetAdapter, element, elementId, options) {
     element = utilities.getRequiredElement(element, elementId);
 
     if (!element)
@@ -52,7 +53,8 @@ export function initialize(element, elementId, options) {
         clickOpens: !(options.readOnly || false),
         disable: options.disabledDates || [],
         inline: options.inline || false,
-        disableMobile: options.disableMobile || true
+        disableMobile: options.disableMobile || true,
+        static: options.staticPicker
     };
 
     if (options.selectionMode)
@@ -68,12 +70,123 @@ export function initialize(element, elementId, options) {
 
     const picker = flatpickr(element, Object.assign({}, defaultOptions, pluginOptions));
 
+    picker.altInput.dotnetAdapter = dotnetAdapter;
+
     if (options) {
         picker.altInput.disabled = options.disabled || false;
         picker.altInput.readOnly = options.readOnly || false;
+        picker.altInput.placeholder = utilities.coalesce(options.placeholder, "");
+
+        picker.altInput.addEventListener("blur", (e) => {
+            const isInput = e.target === picker._input;
+
+            // Workaround for: onchange does not fire when user writes the time and then click outside of the input area.
+            if (isInput && picker.isOpen === false) {
+                picker.input.dispatchEvent(utilities.createEvent("change"));
+                picker.input.dispatchEvent(utilities.createEvent("input"));
+            }
+        });
+
+        if (options.validationStatus) {
+            const flatpickrWrapper = picker.altInput.parentElement;
+
+            if (flatpickrWrapper) {
+                if (options.validationStatus.errorClass) {
+                    function errorClassAddHandler() {
+                        flatpickrWrapper.classList.add(options.validationStatus.errorClass);
+                    }
+
+                    function errorClassRemoveHandler() {
+                        flatpickrWrapper.classList.remove(options.validationStatus.errorClass);
+                    }
+
+                    picker.errorClassWatcher = new ClassWatcher(picker.altInput, options.validationStatus.errorClass, errorClassAddHandler, errorClassRemoveHandler);
+                }
+
+                if (options.validationStatus.successClass) {
+                    function successClassAddHandler() {
+                        flatpickrWrapper.classList.add(options.validationStatus.successClass);
+                    }
+
+                    function successClassRemoveHandler() {
+                        flatpickrWrapper.classList.remove(options.validationStatus.successClass);
+                    }
+
+                    picker.successClassWatcher = new ClassWatcher(picker.altInput, options.validationStatus.successClass, successClassAddHandler, successClassRemoveHandler);
+                }
+            }
+        }
     }
 
+    picker.customOptions = {
+        inputMode: options.inputMode
+    };
+
+    attachEventHandlers(picker.altInput);
+
     _pickers[elementId] = picker;
+}
+
+function attachEventHandlers(picker) {
+    picker.addEventListener("keydown", keyDownHandler);
+    picker.addEventListener("keyup", keyUpHandler);
+    picker.addEventListener("focus", focusHandler);
+    picker.addEventListener("focusin", focusInHandler);
+    picker.addEventListener("focusout", focusOutHandler);
+    picker.addEventListener("keypress", keyPressHandler);
+    picker.addEventListener("blur", blurHandler);
+}
+
+function removeEventHandlers(picker) {
+    picker.removeEventListener("keydown", keyDownHandler);
+    picker.removeEventListener("keyup", keyUpHandler);
+    picker.removeEventListener("focus", focusHandler);
+    picker.removeEventListener("focusin", focusInHandler);
+    picker.removeEventListener("focusout", focusOutHandler);
+    picker.removeEventListener("keypress", keyPressHandler);
+    picker.removeEventListener("blur", blurHandler);
+}
+
+function keyDownHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnKeyDownHandler", e);
+    }
+}
+
+function keyUpHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnKeyUpHandler", e);
+    }
+}
+
+function focusHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnFocusHandler", e);
+    }
+}
+
+function focusInHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnFocusInHandler", e);
+    }
+}
+
+function focusOutHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnFocusOutHandler", e);
+    }
+}
+
+function keyPressHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnKeyPressHandler", e);
+    }
+}
+
+function blurHandler(e) {
+    if (e.target.dotnetAdapter) {
+        e.target.dotnetAdapter.invokeMethodAsync("OnBlurHandler", e);
+    }
 }
 
 export function destroy(element, elementId) {
@@ -81,8 +194,20 @@ export function destroy(element, elementId) {
 
     const instance = instances[elementId];
 
+    if (instance && instance.altInput) {
+        removeEventHandlers(instance.altInput);
+    }
+
     if (instance) {
         instance.destroy();
+
+        if (instance.errorClassWatcher) {
+            instance.errorClassWatcher.disconnect();
+        }
+
+        if (instance.successClassWatcher) {
+            instance.successClassWatcher.disconnect();
+        }
     }
 
     delete instances[elementId];
@@ -93,6 +218,12 @@ export function updateValue(element, elementId, value) {
 
     if (picker) {
         picker.setDate(value);
+
+        // workaround for https://github.com/flatpickr/flatpickr/issues/2861
+        if (picker.customOptions && picker.customOptions.inputMode === 2 && picker.nextMonthNav) {
+            picker.nextMonthNav.click();
+            picker.jumpToDate(value, false);
+        }
     }
 }
 
@@ -143,6 +274,14 @@ export function updateOptions(element, elementId, options) {
 
         if (options.disableMobile.changed) {
             picker.set("disableMobile", options.disableMobile.value || true);
+        }
+
+        if (options.placeholder.changed) {
+            picker.altInput.placeholder = options.placeholder.value;
+        }
+
+        if (options.staticPicker.changed) {
+            picker.set("static", options.staticPicker.value);
         }
     }
 }
