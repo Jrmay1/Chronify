@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Chronify.Client",
   "resources": {
-    "hash": "sha256-idZ94scK9BnH02LeXugAVtPHtOtivlnMlBjotfv2b3A=",
+    "hash": "sha256-5qpsVFI8lw8JK0h0fu7tQzk9Pzg/Qu/zf2NOROXVbvY=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.5l3c173tos.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -25,7 +25,7 @@
       "Blazorise.RichTextEdit.wasm": "sha256-d3mj+SFRwvJbue0CckA6P4YbKqDxV3ojQiBeGwDyRzU=",
       "Blazorise.wasm": "sha256-GFkSgUnx/r7MyE6pS41qDtql9vSJ44vbaI5uk86ZRXs=",
       "BusinessLogic.wasm": "sha256-jH9/f+oS0mYonFgifSeXmGTSBCdpyfMZu/sTy+Zy6qI=",
-      "Chronify.Client.wasm": "sha256-bmsbr3wHwfssQ54VGOspzO6hwWNU3XzDvBPUjZIifPI=",
+      "Chronify.Client.wasm": "sha256-oMr6bidHuXobZIkcE3fGlDFNhoowHgts3h/cW83WODc=",
       "Chronify.Shared.wasm": "sha256-rKMOqIlAw9+a8e/PWLfqINCiyPh6DouKWAT8TH7u7qU=",
       "DeepCloner.wasm": "sha256-JFrc0XdxhCpcC/rNoZ4sGLtZTNiex5j561fsLJEixRY=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-6D7sOKdFS/5CC2PUozTda3/xwskyuz63msDlj0XN7UE=",
