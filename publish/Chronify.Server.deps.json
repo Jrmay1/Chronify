@@ -1864,7 +1864,7 @@
           "System.CodeDom": "4.4.0"
         }
       },
-      "MudBlazor/6.11.0": {
+      "MudBlazor/6.11.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.0",
           "Microsoft.AspNetCore.Components.Web": "8.0.0",
@@ -1872,15 +1872,15 @@
         },
         "runtime": {
           "lib/net7.0/MudBlazor.dll": {
-            "assemblyVersion": "6.11.0.0",
-            "fileVersion": "6.11.0.0"
+            "assemblyVersion": "6.11.1.0",
+            "fileVersion": "6.11.1.0"
           }
         }
       },
       "MudBlazor.ThemeManager/1.0.8": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "8.0.0",
-          "MudBlazor": "6.11.0"
+          "MudBlazor": "6.11.1"
         },
         "runtime": {
           "lib/net6.0/MudBlazor.ThemeManager.dll": {
@@ -1979,7 +1979,7 @@
           }
         }
       },
-      "Radzen.Blazor/4.21.3": {
+      "Radzen.Blazor/4.21.4": {
         "dependencies": {
           "DartSassBuilder": "1.0.0",
           "Microsoft.AspNetCore.Components": "8.0.0",
@@ -1988,8 +1988,8 @@
         },
         "runtime": {
           "lib/net8.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "4.21.3.0",
-            "fileVersion": "4.21.3.0"
+            "assemblyVersion": "4.21.4.0",
+            "fileVersion": "4.21.4.0"
           }
         }
       },
@@ -2965,9 +2965,9 @@
           "Microsoft.AspNetCore.Components.Authorization": "8.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "8.0.0",
           "Microsoft.Extensions.Http": "8.0.0",
-          "MudBlazor": "6.11.0",
+          "MudBlazor": "6.11.1",
           "MudBlazor.ThemeManager": "1.0.8",
-          "Radzen.Blazor": "4.21.3",
+          "Radzen.Blazor": "4.21.4",
           "System.Net.Http.Json": "8.0.0",
           "Toolbelt.Blazor.HttpClientInterceptor": "10.2.0"
         },
@@ -3537,12 +3537,12 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
-    "MudBlazor/6.11.0": {
+    "MudBlazor/6.11.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gP97w+oP0G0slw2P+EKfHfhN126GBHJpL61haQJy3iAo9JSWMkzlcEQ1yFlHSWJQeI9jOZ6pb1IK9XggFOI7lA==",
-      "path": "mudblazor/6.11.0",
-      "hashPath": "mudblazor.6.11.0.nupkg.sha512"
+      "sha512": "sha512-iVbhj7Ca7xq0MXJK9FdqBmftlY3W7PLmKLCbwJ0LFXlzHiSXQKIURo0QAGWYzTb6KzFdFc0lrh4WF/H+c5PGBQ==",
+      "path": "mudblazor/6.11.1",
+      "hashPath": "mudblazor.6.11.1.nupkg.sha512"
     },
     "MudBlazor.ThemeManager/1.0.8": {
       "type": "package",
@@ -3586,12 +3586,12 @@
       "path": "pomelo.entityframeworkcore.mysql/8.0.0-beta.2",
       "hashPath": "pomelo.entityframeworkcore.mysql.8.0.0-beta.2.nupkg.sha512"
     },
-    "Radzen.Blazor/4.21.3": {
+    "Radzen.Blazor/4.21.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cfU1ynqR4vF3g5q0FdkCD+slmp3uGnguk6J/zlDdwpfrm26AzG9047HVPB8AEgtLac3Qufh6Bngm7LI8UqkIqg==",
-      "path": "radzen.blazor/4.21.3",
-      "hashPath": "radzen.blazor.4.21.3.nupkg.sha512"
+      "sha512": "sha512-Xt/gOFzGpYvIjDc3BTnKteZVlsBlDdXkJKaU93FliOaosfLYagK/Z1LZOgYTAqRJNBoNf9nlNJljMs4ZHmUHSQ==",
+      "path": "radzen.blazor/4.21.4",
+      "hashPath": "radzen.blazor.4.21.4.nupkg.sha512"
     },
     "runtime.any.System.Collections/4.3.0": {
       "type": "package",
