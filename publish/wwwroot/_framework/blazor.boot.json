@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Chronify.Client",
   "resources": {
-    "hash": "sha256-LGpij1OmiuRMnP7yURzQpbuJ8Jvg9Yp4yYKbEbHyxOE=",
+    "hash": "sha256-UwkwgZ0Fru3UtYaQzqfn/pb1Df40oW7WhFlLTLBDiF0=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.5l3c173tos.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -24,8 +24,8 @@
       "Blazorise.Licensing.wasm": "sha256-Y2Ui1aeZmC81ki7yEI4xiRZMHZZNgfRT3XlZOwkdiCU=",
       "Blazorise.RichTextEdit.wasm": "sha256-d3mj+SFRwvJbue0CckA6P4YbKqDxV3ojQiBeGwDyRzU=",
       "Blazorise.wasm": "sha256-GFkSgUnx/r7MyE6pS41qDtql9vSJ44vbaI5uk86ZRXs=",
-      "BusinessLogic.wasm": "sha256-Rc2+9M18YKX2FLI8UEmbZ8f82RcJPQiTpPRRIb6bdog=",
-      "Chronify.Client.wasm": "sha256-zcA0sNn0OVQhbGk31AkjDTd8nzsQQwLTtonBAjrn3ww=",
+      "BusinessLogic.wasm": "sha256-Z0DJWJCnUjQR737EIlbpJF20Gkg6zu3U2H0C87KuYUo=",
+      "Chronify.Client.wasm": "sha256-0cOud1r/m0ZW0i1SHvHibIgV7V3UPb2ebIcY0k19o5g=",
       "Chronify.Shared.wasm": "sha256-kUvEaTWLLfsHjSgmZaIlA7OaKEN46SYzmhUdoKdI10o=",
       "DeepCloner.wasm": "sha256-JFrc0XdxhCpcC/rNoZ4sGLtZTNiex5j561fsLJEixRY=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-6D7sOKdFS/5CC2PUozTda3/xwskyuz63msDlj0XN7UE=",
@@ -83,7 +83,7 @@
       "System.Net.Http.wasm": "sha256-yiM3t3gUtV+iQmyKtDAIp5nlN7ghI4Y4Lu9XYXXdzFg=",
       "System.Net.Primitives.wasm": "sha256-yVTWaROK719NfQdf63uAz2SkM+e6H6E1voy56YaEY6U=",
       "System.ObjectModel.wasm": "sha256-FsNH92L03nSmKNXfftXcu55C91hO3+DooOKIu6Jmz2A=",
-      "System.Private.CoreLib.wasm": "sha256-fqMQI9TeM9OMQLqunTkItOtw4rF1I69IeOmf0lCKJ6w=",
+      "System.Private.CoreLib.wasm": "sha256-jE6hMKctsArm3zXFG9bMj8spQq3sXUJ6Yl+FdWPYC9o=",
       "System.Private.Uri.wasm": "sha256-uteLoZCAlGjQCLeVRzrrXdWD0AFLbKMVvRvWl3AUuYo=",
       "System.Private.Xml.Linq.wasm": "sha256-kSHzYwFbqfQcK0hYKIs2E3GsntY2MLIROmJ30AIJMGs=",
       "System.Private.Xml.wasm": "sha256-sYzztiSXBybH8J31Ah666jYWfSJKqtezGzZc6DbRzKM=",
