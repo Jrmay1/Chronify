@@ -16,16 +16,16 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Add .nojekyll file
-      run: touch .nojekyll
+      run: touch publish/.nojekyll
       
     - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/<base href="\/" \/>/<base href="\/World-Builder\/" \/>/g' index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/World-Builder\/" \/>/g' publish/index.html
       
     - name: copy index.html to 404.html
-      run: cp index.html 404.html
+      run: cp publish/index.html publish/404.html
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+        publish_dir: ./publish/
