@@ -23,5 +23,5 @@ jobs:
     - name: Add .nojekyll file
       run: touch .nojekyll
     - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/<base href="\/" \/>/<base href="\/World-Builder\/" \/>/g' release/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/World-Builder\/" \/>/g' index.html
 
