@@ -19,7 +19,7 @@ jobs:
       run: touch publish/.nojekyll
       
     - name: Change base-tag in index.html from / to BlazorGitHubPagesDemo
-      run: sed -i 's/<base href="\/" \/>/<base href="\/World-Builder\/" \/>/g' publish/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/Chronify\/" \/>/g' publish/index.html
       
     - name: copy index.html to 404.html
       run: cp publish/index.html publish/404.html
