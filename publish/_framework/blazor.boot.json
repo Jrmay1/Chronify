@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Chronify.Client",
   "resources": {
-    "hash": "sha256-6gPwvwA2Q4ikH1GQKOnLCXOMYfxf3C10gJARNqkCxdM=",
+    "hash": "sha256-VCoSbdD23gdgg7H9dsy69R3Wu93tUeWxHiMELLQK5Wg=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.xykdwja8nx.js": "sha256-YVR9D1Oi+mEpcSLkWr0zOxMHF9C0j9OfwYs2WW6Cq1I="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.8.0.8.80cvijctdx.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-h86NiUsFURKmdQR45FljcIhj4LygF31i7/ZZlMErdPk="
+      "dotnet.native.wasm": "sha256-wYb3K7HoZPKadk1aGZqxe+tw1NHkk3sFtOCrcUxxy2Y="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -25,7 +25,7 @@
       "Blazorise.RichTextEdit.wasm": "sha256-d3mj+SFRwvJbue0CckA6P4YbKqDxV3ojQiBeGwDyRzU=",
       "Blazorise.wasm": "sha256-GFkSgUnx/r7MyE6pS41qDtql9vSJ44vbaI5uk86ZRXs=",
       "BusinessLogic.wasm": "sha256-WSCkTyYd8xisncHzvmhDibYwjnhfsI4gWjM26Wt9bFY=",
-      "Chronify.Client.wasm": "sha256-p8OzaJWpRrU1cTmWs0ErNiGvphV9CXzf+TZlJNFp0Qg=",
+      "Chronify.Client.wasm": "sha256-EZDunEA6uApeubSQlzq2LCkIK7VnXIOQ1DWNGxcRCIQ=",
       "Chronify.Shared.wasm": "sha256-edMpghGP5RCSsoHA9IBG5iZ0ru2hIDzG4/uIfRf7avc=",
       "DeepCloner.wasm": "sha256-JFrc0XdxhCpcC/rNoZ4sGLtZTNiex5j561fsLJEixRY=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-kdK/mC4rZrgrtdbcCdzbhfNJKTPFRbVAHu6kW4Ez2Jw=",
